@@ -1,0 +1,162 @@
+#sidebar {
+   display: flex;
+   flex-direction: column;
+   padding: 24px;
+   width: 100%;
+   height: 100%;
+
+   background: rgba(255, 255, 255, 0.16);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
+   border: 2px solid rgba(168, 168, 168, 0.77);
+}
+
+.header-sidebar {
+   width: 99%;
+   padding: 0 0 24px 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.header-sidebar img {
+   width: 150px;
+}
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   padding: 32px 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.menu button {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   padding: 12px;
+   border: none;
+   border-radius: 16px;
+   background: none;
+   color: #f2f2f2;
+   font: normal 700 14px/130% Inter, sans-serif;
+   opacity: 0.8;
+   cursor: pointer;
+   transition: background 1s, border-radius 1s;
+}
+
+.menu button:hover {
+   background: rgba(255, 255, 255, 0);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu button i {
+   font-size: 16px;
+   transition: font-size 0.2s;
+}
+
+.menu button:hover i {
+   font-size: 20px;
+}
+
+.music-player {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+   padding: 24px 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.music-player .album {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 24px;
+}
+.music-player .album img {
+   width: 150px;
+   border-radius: 16px;
+   opacity: 0.8;
+}
+.music-player .album p {
+   font: normal 700 14px/130% Inter, sans-serif;
+}
+.music-player .player {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 48px;
+}
+.music-player .player .button-play {
+   padding: 6px 24px;
+   background: #f2f2f2;
+   border-radius: 48px;
+   transition: all 1s;
+   font-size: 18px;
+   cursor: pointer;
+}
+.music-player .player .button-play:hover {
+   opacity: 0.6;
+}
+.music-player .player .fi-rr-play {
+   color: #000;
+}
+.music-player .player .fi-rr-pause {
+   display: none;
+}
+
+.progress {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+   width: 80%;
+}
+.progress .loader {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+   width: 100%;
+   height: 6px;
+
+   background: #e3e3ed;
+   border-radius: 999px;
+}
+.progress .loader .bar {
+   width: 46%;
+   height: 6px;
+   border-radius: 999px;
+
+   background: linear-gradient(90deg, #1ed760 0%, #1ed75f56 100%);
+}
+
+/* INICIO DA DIV PROFILE */
+.profile {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   padding: 24px 0;
+}
+.profile img {
+   width: 50px;
+   border-radius: 50%;
+}
+.profile .user {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   width: 100%;
+}
+.profile .user h3 {
+   font: normal 700 16px/130% Inter, sans-serif;
+}
+.profile .user p {
+   font: normal 600 14px/130% Inter, sans-serif;
+   opacity: 0.6;
+}

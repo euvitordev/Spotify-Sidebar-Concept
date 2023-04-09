@@ -1,0 +1,30 @@
+@import url(./components/sidebar.css);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-family: "Inter", sans-serif;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   background: url(https://wallpapercave.com/wp/wp8970317.png) no-repeat;
+
+   color: #f2f2f2;
+}
+
+main {
+   width: 375px;
+   height: 94%;
+}
+
+i {
+   cursor: pointer;
+}
